@@ -1,0 +1,6 @@
+- [ ] Benson Barber
+- [ ] Local Coffee Shop
+- [ ] Auto Repair
+- [ ] Nail Salon
+- [ ] Small Tax Office
+- [ ] Gym / Martial Arts
