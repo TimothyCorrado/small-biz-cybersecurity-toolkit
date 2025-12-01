@@ -29,6 +29,8 @@ Set up the entire framework for the Small Business Cybersecurity Toolkit. Establ
 - Create first simulated SMB assessment template.  
 - Build iPad/laptop intro kit for field assessments.  
 - Begin crafting assessment blueprint for Monday fieldwork.
+- Adjusting goals to fit into schedule for this week.
+- Goal is to complete an SMB assessment this week, simulated or real.
 
 ---
 
