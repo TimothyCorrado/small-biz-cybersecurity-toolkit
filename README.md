@@ -53,6 +53,8 @@ Designed to show readiness for roles such as:
 
 ---
 
+# Will be getting simulation assessments then real assessments done before TechOmaha December 15th.
+
 # 🎖️ Author  
 **Tim Corrado**  
 Marine Veteran | Security+ Certified | Blue Team | SMB Cyber Defense  
