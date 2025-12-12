@@ -1,95 +1,115 @@
 # CYBERSECURITY ASSESSMENT REPORT
-**Business:** {{BusinessName}}  
-**Industry:** {{Industry}}  
-**Employees:** {{Employees}}  
-**Date:** {{AssessmentDate}}  
-**Consultant:** **Timothy Corrado, Cybersecurity Analyst**
+**Business:** {{BUSINESS_NAME}}  
+**Industry:** {{INDUSTRY}}  
+**Employees:** {{EMPLOYEES}}  
+**Date:** {{DATE}}  
+**Consultant:** Timothy Corrado — Cybersecurity Analyst
 
 ---
 
 ## Executive Summary
-This assessment provides a high-level evaluation of **{{BusinessName}}**’s cybersecurity posture.  
-It highlights high-severity risks, quick remediation actions, and long-term improvements to reduce exposure to ransomware, unauthorized access, and data loss.
+This assessment provides a high-level evaluation of **{{BUSINESS_NAME}}**’s cybersecurity posture.  
+It identifies high, medium, low-severity risks, unknown configuration risks, and recommendations for improvement.
 
 ---
 
 ## Security Snapshot
 | Category | Score |
 |---------|-------|
-| **Overall Security Score** | **{{SecurityScore}} / 100** |
-| Network Security | {{NetworkScore}} |
-| Access Controls | {{AccessScore}} |
-| Device Security | {{DeviceScore}} |
-| Business Processes | {{ProcessScore}} |
+| Overall Security Score | {{SCORE_TOTAL}} / 100 |
+| Network Security | {{SCORE_NETWORK}} / 10 |
+| Access Controls | {{SCORE_ACCESS}} / 10 |
+| Device Security | {{SCORE_DEVICE}} / 10 |
+| Business Processes | {{SCORE_PROCESSES}} / 10 |
 
 ---
 
 ## Severity Legend
 - <span style="color:#d00000; font-weight:bold;">● High Severity</span> – Immediate attention required  
-- <span style="color:#ff8c00; font-weight:bold;">● Medium Severity</span> – Important, address soon  
-- <span style="color:#e0c200; font-weight:bold;">● Low Severity</span> – Hardening / best-practice improvements  
+- <span style="color:#ff8c00; font-weight:bold;">● Medium Severity</span> – Important improvement  
+- <span style="color:#e0c200; font-weight:bold;">● Low Severity</span> – Best practice / hardening  
+- <span style="color:#808080; font-weight:bold;">○ Unknown</span> – Status not confirmed; may represent hidden risk  
 
 ---
 
-## Top Risks
-1. <span style="color:#d00000;">●</span> {{Risk1}}  
-2. <span style="color:#d00000;">●</span> {{Risk2}}  
-3. <span style="color:#d00000;">●</span> {{Risk3}}  
-4. <span style="color:#ff8c00;">●</span> {{Risk4}}  
-5. <span style="color:#ff8c00;">●</span> {{Risk5}}  
+# Top Risks
+{{TOP_RISKS}}
 
 ---
 
-## Quick Wins (Complete Within 72 Hours)
-- {{QuickWin1}}
-- {{QuickWin2}}
-- {{QuickWin3}}
-- {{QuickWin4}}
-- {{QuickWin5}}
+# Quick Wins (Complete Within 72 Hours)
+{{QUICK_WINS}}
 
 ---
 
-## Detailed Findings
+# Detailed Findings
 
-### Network / Wi-Fi
-- {{NetworkFinding1}}
-- {{NetworkFinding2}}
-- {{NetworkFinding3}}
-- {{NetworkFinding4}}
-
-### Workstations
-- {{WorkstationFinding1}}
-- {{WorkstationFinding2}}
-- {{WorkstationFinding3}}
-
-### Server / Backups
-- {{ServerFinding1}}
-- {{ServerFinding2}}
-
-### Business Processes & Human Factors
-- {{ProcessFinding1}}
-- {{ProcessFinding2}}
-- {{ProcessFinding3}}
+Each section includes **Yes / No / Unknown** status.  
+Unknowns automatically receive a recommended action.
 
 ---
 
-## Recommendations
-
-### Short-Term (0–30 Days)
-- {{ShortTerm1}}
-- {{ShortTerm2}}
-- {{ShortTerm3}}
-- {{ShortTerm4}}
-
-### Long-Term (30–180 Days)
-- {{LongTerm1}}
-- {{LongTerm2}}
-- {{LongTerm3}}
+## Network / Wi-Fi
+{{NETWORK_FINDINGS}}
 
 ---
 
-## Contact
+## Devices / Workstations
+{{DEVICE_FINDINGS}}
+
+---
+
+## Accounts & Access Control
+{{ACCESS_FINDINGS}}
+
+---
+
+## Backups & Data Protection
+{{BACKUP_FINDINGS}}
+
+---
+
+## Business Processes & Human Factors
+{{PROCESS_FINDINGS}}
+
+---
+
+## Physical Security
+{{PHYSICAL_FINDINGS}}
+
+---
+
+# Unknown Items (Requires Verification)
+Any field marked with  
+<span style="color:#808080; font-weight:bold;">○ Unknown</span>  
+indicates a configuration that could not be confirmed during the assessment.
+
+Unknowns should be treated as **potential vulnerabilities** until verified.
+
+Recommended Action for ALL Unknowns:  
+> **Status unknown — recommend verification with IT, router settings review, or a future on-site configuration check.**
+
+Unknown items for this assessment:  
+{{UNKNOWN_ITEMS}}
+
+---
+
+# Short-Term Recommendations (0–30 Days)
+{{SHORT_TERM_RECOMMENDATIONS}}
+
+---
+
+# Long-Term Improvements (30–180 Days)
+{{LONG_TERM_RECOMMENDATIONS}}
+
+---
+
+## Consultant
 **Timothy Corrado**  
 Cybersecurity Analyst  
 Email: **TimothyCorrado@gmail.com**  
 LinkedIn: **https://linkedin.com/in/timothy-corrado**
+
+---
+
+# END OF REPORT
