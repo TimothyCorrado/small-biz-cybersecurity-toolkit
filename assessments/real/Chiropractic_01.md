@@ -2,7 +2,7 @@
 **Business:** Chiropractic01  
 **Industry:** Healthcare  
 **Employees:** 7  
-**Date:** 12/16/2025 
+**Date:** 12/16/2025  
 **Consultant:** Timothy Corrado — Cybersecurity Analyst
 
 ---
