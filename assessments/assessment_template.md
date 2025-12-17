@@ -27,8 +27,9 @@ It identifies high, medium, low-severity risks, unknown configuration risks, and
 ## Severity Legend
 - <span style="color:#d00000; font-weight:bold;">● High Severity</span> – Immediate attention required  
 - <span style="color:#ff8c00; font-weight:bold;">● Medium Severity</span> – Important improvement  
-- <span style="color:#e0c200; font-weight:bold;">● Low Severity</span> – Best practice / hardening  
-- <span style="color:#808080; font-weight:bold;">○ Unknown</span> – Status not confirmed; may represent hidden risk  
+- <span style="color:#808080; font-weight:bold;">○ Unknown</span> – Status not confirmed; may represent hidden risk 
+- <span style="color:#2d6a4f; font-weight:bold;">✔ Secure / In Place</span> 
+ 
 
 ---
 

@@ -1,5 +1,5 @@
 # 🎮 SMB Cybersecurity Consultant – Leveling Roadmap (RPG Mode)
-*A gamified progression system showing experience milestones, pricing tiers, and XP rules as I grow my SMB cybersecurity consulting skills.*
+*A gamified progression system showing experience milestones and pricing tiers as I grow my SMB cybersecurity consulting skills.*
 
 ---
 
