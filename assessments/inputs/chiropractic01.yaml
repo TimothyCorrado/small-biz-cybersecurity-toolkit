@@ -1,0 +1,48 @@
+Business Name: Chiropractic01
+Industry: Healthcare
+Employees: 7
+
+Findings:
+  Router firmware updated: Yes
+  Router admin password strong: Yes
+  WPA2 or WPA3 in use: No
+  Guest Wi-Fi exists: Yes
+  Guest Wi-Fi isolated: Unknown
+  SSID names recorded: Unknown
+  Wi-Fi password complexity strong: Yes
+  WPS disabled: Unknown
+  UPnP disabled: Unknown
+  Firewall enabled on router: Yes
+
+  Windows Update current: Yes
+  Antivirus active: Yes
+  Local admin disabled: No
+  BitLocker enabled: Unknown
+  Auto-lock screen enabled: Yes
+  Shared accounts in use: Yes
+  RDP enabled anywhere: Unknown
+  Unsupported OS present: No
+  USB ports restricted: Yes
+
+  Unique accounts per employee: No
+  Password complexity enforced: Yes
+  Password expiration policy active: Yes
+  MFA on email: No
+  MFA on critical systems: No
+  Inactive accounts removed: Yes
+  Default accounts disabled: Yes
+
+  Backups occur regularly: Unknown
+  Backups stored offsite: No
+  Backup integrity tested: Unknown
+  Shared folders restricted: Yes
+  Everyone permissions found: No
+
+  Incident Response Plan exists: Yes
+  Cybersecurity training done: Yes
+  Onboarding documented: Yes
+  Offboarding documented: Yes
+
+  Networking equipment secured: Yes
+  Server room restricted: No
+  Workstations not publicly exposed: No
