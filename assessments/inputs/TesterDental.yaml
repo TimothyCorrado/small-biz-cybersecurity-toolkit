@@ -1,0 +1,48 @@
+Business Name: TimmyDental
+Industry: Teeth
+Employees: 10
+
+Findings:
+  Router firmware updated: Yes
+  Router admin password strong: Yes
+  WPA2 or WPA3 in use: Yes
+  Guest Wi-Fi exists: No
+  Guest Wi-Fi isolated: Yes
+  SSID names recorded: Yes
+  Wi-Fi password complexity strong: Yes
+  WPS disabled: Unknown
+  UPnP disabled: Yes
+  Firewall enabled on router: No
+
+  Windows Update current: No
+  Antivirus active: No
+  Local admin disabled: Unknown
+  BitLocker enabled: Yes
+  Auto-lock screen enabled: Yes
+  Shared accounts in use: No
+  RDP enabled anywhere: No
+  Unsupported OS present: No
+  USB ports restricted: Yes
+
+  Unique accounts per employee: No
+  Password complexity enforced: Yes
+  Password expiration policy active: No
+  MFA on email: Yes
+  MFA on critical systems: Yes
+  Inactive accounts removed: Yes
+  Default accounts disabled: Yes
+
+  Backups occur regularly: No
+  Backups stored offsite: No
+  Backup integrity tested: No
+  Shared folders restricted: Yes
+  Everyone permissions found: Unknown
+
+  Incident Response Plan exists: Yes
+  Cybersecurity training done: No
+  Onboarding documented: Unknown
+  Offboarding documented: Unknown
+
+  Networking equipment secured: Yes
+  Server room restricted: Yes
+  Workstations not publicly exposed: Yes

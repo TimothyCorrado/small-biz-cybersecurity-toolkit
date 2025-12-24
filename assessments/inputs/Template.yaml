@@ -1,0 +1,48 @@
+Business Name: 
+Industry: 
+Employees: 
+
+Findings:
+  Router firmware updated: 
+  Router admin password strong: 
+  WPA2 or WPA3 in use: 
+  Guest Wi-Fi exists: 
+  Guest Wi-Fi isolated: 
+  SSID names recorded: 
+  Wi-Fi password complexity strong: 
+  WPS disabled: 
+  UPnP disabled: 
+  Firewall enabled on router: 
+
+  Windows Update current: 
+  Antivirus active: 
+  Local admin disabled: 
+  BitLocker enabled: 
+  Auto-lock screen enabled: 
+  Shared accounts in use: 
+  RDP enabled anywhere: 
+  Unsupported OS present: 
+  USB ports restricted: 
+
+  Unique accounts per employee: 
+  Password complexity enforced: 
+  Password expiration policy active: 
+  MFA on email: 
+  MFA on critical systems: 
+  Inactive accounts removed: 
+  Default accounts disabled: 
+
+  Backups occur regularly: 
+  Backups stored offsite: 
+  Backup integrity tested: 
+  Shared folders restricted: 
+  Everyone permissions found: 
+
+  Incident Response Plan exists: 
+  Cybersecurity training done: 
+  Onboarding documented: 
+  Offboarding documented: 
+
+  Networking equipment secured: 
+  Server room restricted: 
+  Workstations not publicly exposed: 
