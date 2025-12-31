@@ -3,7 +3,7 @@
 This folder contains **internal, analyst-style working notes** used during the development of this cybersecurity portfolio.  
 Unlike `CONTRIBUTION_LOG.md`, which is polished and recruiter-friendly, the **progress folder is intentionally informal**.
 
-Think of it as your personal SOC analyst notebook.
+Think of it as my personal SOC analyst notebook.
 
 ---
 
