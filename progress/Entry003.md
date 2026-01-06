@@ -23,3 +23,7 @@ Applied to 10 different jobs on linkedin, looking at requirements needed for som
 01/04/2026:
 
 Tracking my crypto through a google sheet, and using the crypto portfolio I created to view and take screenshots of. Plan to generate crypto as I go, and put money to the side each week, while I work Lyft and go business to business locally to do assessments.
+
+01/05/2026:
+
+Goal is to get a real assessment done tomorrow, working to get past conflicts 
