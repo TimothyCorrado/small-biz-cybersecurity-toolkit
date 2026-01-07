@@ -31,3 +31,5 @@ Goal is to get a real assessment done tomorrow, working to get past conflicts
 01/06/2026:
 
 Reached out to people to on linkedin, and saved info from tek systems, will reach out tomorrow.
+
+01/07/2026: Left voicemail at tek systems, and filled out a form for them to reach out to me. Over thinking the SMB process, and must just take action and fix mistakes as I go.
