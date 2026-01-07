@@ -27,3 +27,7 @@ Tracking my crypto through a google sheet, and using the crypto portfolio I crea
 01/05/2026:
 
 Goal is to get a real assessment done tomorrow, working to get past conflicts 
+
+01/06/2026:
+
+Reached out to people to on linkedin, and saved info from tek systems, will reach out tomorrow.
