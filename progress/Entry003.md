@@ -33,3 +33,7 @@ Goal is to get a real assessment done tomorrow, working to get past conflicts
 Reached out to people to on linkedin, and saved info from tek systems, will reach out tomorrow.
 
 01/07/2026: Left voicemail at tek systems, and filled out a form for them to reach out to me. Over thinking the SMB process, and must just take action and fix mistakes as I go.
+
+01/08/2026:
+
+Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing starts now, with researching the role, polishing up my knowledge, and researching the interviewers.
