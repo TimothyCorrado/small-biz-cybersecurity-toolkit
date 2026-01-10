@@ -1,0 +1,48 @@
+Business Name: Dental01
+Industry: Dental
+Employees: 13
+
+Findings:
+  Router firmware updated: Yes
+  Router admin password strong: Yes
+  WPA2 or WPA3 in use: Yes
+  Guest Wi-Fi exists: Yes
+  Guest Wi-Fi isolated: No
+  SSID names recorded: Unknown
+  Wi-Fi password complexity strong: No
+  WPS disabled: Unknown
+  UPnP disabled: Unknown
+  Firewall enabled on router: Yes
+
+  Windows Update current: Yes
+  Antivirus active: Yes
+  Local admin disabled: Unknown
+  BitLocker enabled: Unknown
+  Auto-lock screen enabled: Yes
+  Shared accounts in use: No
+  RDP enabled anywhere: No
+  Unsupported OS present: No
+  USB ports restricted: No
+
+  Unique accounts per employee: No
+  Password complexity enforced: Yes
+  Password expiration policy active: No
+  MFA on email: No
+  MFA on critical systems: Unknown
+  Inactive accounts removed: Yes
+  Default accounts disabled: Yes
+
+  Backups occur regularly: No
+  Backups stored offsite: No
+  Backup integrity tested: No
+  Shared folders restricted: No
+  Everyone permissions found: Yes
+
+  Incident Response Plan exists: No
+  Cybersecurity training done: No
+  Onboarding documented: Yes
+  Offboarding documented: Yes
+
+  Networking equipment secured: No
+  Server room restricted: No
+  Workstations not publicly exposed: No
