@@ -39,3 +39,5 @@ Reached out to people to on linkedin, and saved info from tek systems, will reac
 Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing starts now, with researching the role, polishing up my knowledge, and researching the interviewers.
 
 01/12/2026: Interview prep, and studying questions that may be asked. And researched the position. Will practice a bit more before the interview tomorrow at 3pm.
+
+01/13/2026: Completed interview, some questions studied popped up, some did not. It was over all great practice. will hear back next week if I got the position.
