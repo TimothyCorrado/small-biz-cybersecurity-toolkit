@@ -43,3 +43,5 @@ Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing 
 01/13/2026: Completed interview, some questions studied popped up, some did not. It was over all great practice. will hear back next week if I got the position.
 
 01/14/2026: Applied to a few more jobs, and another job for the same title, but different agency within NE State, just to make sure I get a job for sure soon, since Lyft is thinning on funds due to more drivers taking in to the market.
+
+01/15/2026: Connected with recruiters on linkedin, and messaged them! One is a USMC vet and a recruiter for fiserv.
