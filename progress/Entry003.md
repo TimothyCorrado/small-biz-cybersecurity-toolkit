@@ -45,3 +45,5 @@ Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing 
 01/14/2026: Applied to a few more jobs, and another job for the same title, but different agency within NE State, just to make sure I get a job for sure soon, since Lyft is thinning on funds due to more drivers taking in to the market.
 
 01/15/2026: Connected with recruiters on linkedin, and messaged them! One is a USMC vet and a recruiter for fiserv.
+
+01/16/2026: Got intel to apply to remedy staffing, and GXO. Will apply over the weekend, and was told to go to remedy staffing in person after setting up my profile, they will work quicker that way.
