@@ -49,3 +49,5 @@ Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing 
 01/16/2026: Got intel to apply to remedy staffing, and GXO. Will apply over the weekend, and was told to go to remedy staffing in person after setting up my profile, they will work quicker that way.
 
 01/17/2026: Applied for remedy, and building profile. Going to go there in person on monday.
+
+01/18/2026: Remedy has walk-ins on Tuesdays and Thursdays, so I will be walking in Tuesday.
