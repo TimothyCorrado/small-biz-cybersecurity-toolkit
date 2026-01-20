@@ -51,3 +51,5 @@ Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing 
 01/17/2026: Applied for remedy, and building profile. Going to go there in person on monday.
 
 01/18/2026: Remedy has walk-ins on Tuesdays and Thursdays, so I will be walking in Tuesday.
+
+01/19/2026: Practiced interview questions. Going to remedy staffing tomorrow
