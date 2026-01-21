@@ -53,3 +53,5 @@ Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing 
 01/18/2026: Remedy has walk-ins on Tuesdays and Thursdays, so I will be walking in Tuesday.
 
 01/19/2026: Practiced interview questions. Going to remedy staffing tomorrow
+
+01/20/2026: Found out that remedy staffing is only industrial, wearhouse, and physical labor jobs. Meeting with a guy I met from linkedin tomorrow morning that's with teksystems. I also got an interview at nebraska state at another agency on Friday at 3PM which is huge. Thanks to the practice I have from last interview there, I will be able to dial in, and get done much better.
