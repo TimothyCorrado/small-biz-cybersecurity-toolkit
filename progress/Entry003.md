@@ -57,3 +57,5 @@ Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing 
 01/20/2026: Found out that remedy staffing is only industrial, wearhouse, and physical labor jobs. Meeting with a guy I met from linkedin tomorrow morning that's with teksystems. I also got an interview at nebraska state at another agency on Friday at 3PM which is huge. Thanks to the practice I have from last interview there, I will be able to dial in, and get done much better.
 
 01/22/2026: Utilized yesterday and today to interview prep. Meeting with teksystems recruiter went well, did a mock interview, and he told me I did great. Now just some other areas to polish for interview taking, and more questions to make sure I have down and answer confidently, and I will be able to do the best at this interview.
+
+01/26/2026: Completed interview, debriefing with what I would need to do to be a better candidate. Automation, and SIEM practice would be good. SIEMulate SOC day work. Using more Splunk, and other tools.
