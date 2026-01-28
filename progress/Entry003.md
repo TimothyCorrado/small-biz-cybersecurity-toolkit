@@ -59,3 +59,5 @@ Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing 
 01/22/2026: Utilized yesterday and today to interview prep. Meeting with teksystems recruiter went well, did a mock interview, and he told me I did great. Now just some other areas to polish for interview taking, and more questions to make sure I have down and answer confidently, and I will be able to do the best at this interview.
 
 01/26/2026: Completed interview, debriefing with what I would need to do to be a better candidate. Automation, and SIEM practice would be good. SIEMulate SOC day work. Using more Splunk, and other tools.
+
+01/27/2026: Building a firewall simulation, and listening to professor messer for updates with technology, and polishing up fundamentals of security. Following what professor messer is recommending with a firewall sim, to generate reports. It also was an interview question, that asked, "What my experience is with a firewall". Having a better answer for that will be good as well.
