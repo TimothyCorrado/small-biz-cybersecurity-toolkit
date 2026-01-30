@@ -64,3 +64,5 @@ Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing 
 
 01/28/2026: Got the firewall skelton and walkthrough put together, ready to start that and have firewall experience. Then will be able to say: 
 “I don’t have production enterprise firewall access yet, but I built a firewall lab where I configured outbound and inbound rules, enabled logging, generated blocked traffic, and analyzed the logs the same way a SOC would. I focused on understanding what normal noise looks like versus potentially risky patterns.”
+
+01/29/2026: Will be working on getting my Azure Fundamentals certificate while I do this Firewall lab, since that seems to be important for government work, which is my goal to get into.
