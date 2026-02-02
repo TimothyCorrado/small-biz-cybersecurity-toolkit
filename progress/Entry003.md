@@ -66,3 +66,41 @@ Got Interview in Lincoln, NE next Tuesday for IT Security Engineer I! Preparing 
 “I don’t have production enterprise firewall access yet, but I built a firewall lab where I configured outbound and inbound rules, enabled logging, generated blocked traffic, and analyzed the logs the same way a SOC would. I focused on understanding what normal noise looks like versus potentially risky patterns.”
 
 01/29/2026: Will be working on getting my Azure Fundamentals certificate while I do this Firewall lab, since that seems to be important for government work, which is my goal to get into.
+
+NOTES 02/01/2026 completion log:
+
+Installed a firewall from scratch
+Debugged virtualization conflicts
+Fixed bootloader issues
+Repaired a broken Windows network stack
+Verified L3 connectivity
+Brought up a production-grade firewall UI
+
+
+Understanding of implicit deny
+DNS flow awareness
+Rule order importance
+Layered troubleshooting (ICMP → DNS → HTTPS)
+
+Removed default allow rules
+Applied least privilege
+Identified DNS flow dependencies
+Used ICMP as a diagnostic tool
+Validated behavior with testing
+Confirmed logs and statefulness
+
+“After removing the default allow rule, I selectively re-enabled outbound ICMP for diagnostics, DNS for name resolution, and HTTP/HTTPS for web access. I validated the behavior by testing raw IP connectivity, DNS resolution, and reviewing blocked traffic in the firewall logs.”
+
+“I built a pfSense firewall lab where I removed permissive default rules and implemented least-privilege outbound access. I explicitly allowed ICMP for diagnostics, DNS for name resolution, and HTTP/HTTPS for web access, validating functionality through command-line testing and firewall logs.”
+
+Generated unauthorized traffic
+Observed it being blocked
+Correlated endpoint behavior with firewall logs
+
+ALERT-01: Blocked Outbound Traffic
+Source Host: 192.168.50.50
+Destination: 8.8.8.8 (DNS)
+Action: Blocked (Implicit Deny)
+Assessment: Endpoint attempted outbound DNS traffic outside allowed policy. Traffic was correctly blocked by firewall.
+Recommendation: Validate endpoint DNS configuration and user activity.
+
