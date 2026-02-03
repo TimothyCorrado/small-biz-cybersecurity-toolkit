@@ -132,6 +132,7 @@ The `/screenshots` directory contains:
 - Allowed traffic validation
 - Blocked traffic and corresponding firewall logs
 - pfSense system status dashboard
+- Evidence of blocked lateral movement between internal segments (phase 4)
 
 ---
 
