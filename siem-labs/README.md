@@ -8,5 +8,7 @@ Hands-on SIEM experience including:
 - Custom dashboards  
 - Correlation logic  
 - Screenshots of visualizations  
+- Firewall Detection & Logging
+- Security Awareness Automation (phishing simulations, user risk metrics)
 
 Folders correspond to individual labs.

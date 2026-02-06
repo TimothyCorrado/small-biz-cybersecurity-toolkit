@@ -1,0 +1,10 @@
+Subject: Action Required: Account Policy Update (SIMULATION)
+
+Hi user,
+
+This is a SECURITY AWARENESS SIMULATION for training purposes.
+Please review the policy update at the link below:
+
+http://127.0.0.1:8000/click?user=user01&campaign=sim-001
+
+(Do not enter credentials on any page — this lab never collects them.)

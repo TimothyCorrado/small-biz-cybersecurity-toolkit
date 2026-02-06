@@ -1,0 +1,3 @@
+timestamp_utc,user,campaign,client_ip,user_agent,path
+2026-02-06T03:19:45.103795+00:00,"user01","sim-001","127.0.0.1","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36","/click?user=user01&campaign=sim-001"
+2026-02-06T03:25:20.773979+00:00,"user01","sim-001","127.0.0.1","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36","/click?user=user01&campaign=sim-001"
