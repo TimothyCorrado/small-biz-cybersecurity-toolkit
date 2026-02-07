@@ -104,3 +104,5 @@ Action: Blocked (Implicit Deny)
 Assessment: Endpoint attempted outbound DNS traffic outside allowed policy. Traffic was correctly blocked by firewall.
 Recommendation: Validate endpoint DNS configuration and user activity.
 
+02/06/2025: proxmox - VM software, I was told it'll "change my life", looking into it!
+
