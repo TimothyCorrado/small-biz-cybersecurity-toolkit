@@ -1,5 +1,6 @@
 import csv
 import os
+import json
 from datetime import datetime, timedelta, timezone
 from collections import defaultdict
 
@@ -8,6 +9,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
 EVIDENCE_LOG_DIR = os.path.join(PROJECT_ROOT, "evidence", "logs")
 
 CLICK_LOG = os.path.join(EVIDENCE_LOG_DIR, "click-events.csv")
+CLICK_JSONL = os.path.join(EVIDENCE_LOG_DIR, "click-events.jsonl")
 ACTIONS_LOG = os.path.join(EVIDENCE_LOG_DIR, "sent-actions.log")
 METRICS_CSV = os.path.join(EVIDENCE_LOG_DIR, "metrics-summary.csv")
 
@@ -19,25 +21,59 @@ def parse_iso(ts: str) -> datetime:
 
 def ensure_paths():
     os.makedirs(EVIDENCE_LOG_DIR, exist_ok=True)
-    if not os.path.exists(CLICK_LOG):
-        raise FileNotFoundError(f"Missing click log: {CLICK_LOG}. Run server and click first.")
+    # ensure at least one of the click logs exists
+    if not (os.path.exists(CLICK_JSONL) or os.path.exists(CLICK_LOG)):
+        raise FileNotFoundError(
+            f"Missing click log: {CLICK_JSONL} or {CLICK_LOG}. Run server and click first."
+        )
 
 def load_clicks_since(cutoff: datetime):
     clicks = []
-    with open(CLICK_LOG, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            try:
-                ts = parse_iso(row["timestamp_utc"])
-            except Exception:
-                continue
-            if ts >= cutoff:
-                clicks.append({
-                    "ts": ts,
-                    "user": row.get("user", "unknown").strip('"'),
-                    "campaign": row.get("campaign", "sim-000").strip('"'),
-                })
+    # Prefer JSON Lines report if present
+    if os.path.exists(CLICK_JSONL):
+        with open(CLICK_JSONL, "r", encoding="utf-8") as f_jsonl:
+            for line in f_jsonl:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    event = json.loads(line)
+                except Exception:
+                    continue
+                ts_str = event.get("timestamp_utc")
+                if not ts_str:
+                    continue
+                try:
+                    ts = parse_iso(ts_str)
+                except Exception:
+                    continue
+                if ts >= cutoff:
+                    clicks.append(
+                        {
+                            "ts": ts,
+                            "user": event.get("user", "unknown"),
+                            "campaign": event.get("campaign", "sim-000"),
+                        }
+                    )
+    else:
+        # Fall back to CSV
+        with open(CLICK_LOG, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                try:
+                    ts = parse_iso(row["timestamp_utc"])
+                except Exception:
+                    continue
+                if ts >= cutoff:
+                    clicks.append(
+                        {
+                            "ts": ts,
+                            "user": row.get("user", "unknown").strip('"'),
+                            "campaign": row.get("campaign", "sim-000").strip('"'),
+                        }
+                    )
     return clicks
+
 
 def append_action(line: str):
     now = datetime.now(timezone.utc).isoformat()
@@ -58,16 +94,7 @@ def write_metrics(total_clicks: int, unique_users: int, repeat_users: int, by_ca
         w.writerow(["campaign", "clicks_last_30d"])
         for camp, cnt in sorted(by_campaign.items(), key=lambda x: x[0]):
             w.writerow([camp, cnt])
-
-def main():
-    ensure_paths()
-    cutoff = datetime.now(timezone.utc) - timedelta(days=WINDOW_DAYS)
-    clicks = load_clicks_since(cutoff)
-
-    clicks_by_user = defaultdict(list)
-    clicks_by_campaign = defaultdict(int)
-
-    for c in clicks:
+for c in clicks:
         clicks_by_user[c["user"]].append(c)
         clicks_by_campaign[c["campaign"]] += 1
 
@@ -92,8 +119,10 @@ def main():
         by_campaign=dict(clicks_by_campaign)
     )
 
+    # Report which click log was used
+    log_src = CLICK_JSONL if os.path.exists(CLICK_JSONL) else CLICK_LOG
     print("[+] Automation run complete")
-    print(f"[+] Read clicks from:  {CLICK_LOG}")
+    print(f"[+] Read clicks from:  {log_src}")
     print(f"[+] Wrote actions to:  {ACTIONS_LOG}")
     print(f"[+] Wrote metrics to:  {METRICS_CSV}")
 
