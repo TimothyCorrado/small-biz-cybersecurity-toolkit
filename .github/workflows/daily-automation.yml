@@ -1,4 +1,6 @@
 name: Daily Security Awareness Automation
+permissions:
+  contents: write
 
 on:
   schedule:
