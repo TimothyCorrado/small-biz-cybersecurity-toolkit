@@ -106,3 +106,4 @@ Recommendation: Validate endpoint DNS configuration and user activity.
 
 02/06/2025: proxmox - VM software, I was told it'll "change my life", looking into it!
 
+02/13/2026: downgrading position to help desk to get into cyber security, studying for A+ certificate, and applying for help desk / cyber
