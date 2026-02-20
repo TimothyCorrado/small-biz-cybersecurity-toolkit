@@ -111,3 +111,5 @@ Recommendation: Validate endpoint DNS configuration and user activity.
 02/16/2025: Applied to 12 jobs yesterday, looking into making a cybersecurity ai generating media.
 
 02/17/2026: practiced with ai generation, to generate stories and make educational content.
+
+02/19/2026: looking into pen testing, tryhackme as well 
