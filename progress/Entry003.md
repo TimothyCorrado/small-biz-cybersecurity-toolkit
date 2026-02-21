@@ -1,4 +1,4 @@
-01/02/2026:
+I'm01/02/2026:
 
 Officially the new year. Gameplanning for @HONEYPOT-01
 
@@ -113,3 +113,5 @@ Recommendation: Validate endpoint DNS configuration and user activity.
 02/17/2026: practiced with ai generation, to generate stories and make educational content.
 
 02/19/2026: looking into pen testing, tryhackme as well 
+
+02/20/2026: scheduled interview at remarcable on Monday at 11am for IT support
