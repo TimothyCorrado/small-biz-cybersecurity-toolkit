@@ -1,0 +1,35 @@
+name: Daily SOC automation
+
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps (optional)
+        run: |
+          python -m pip install -U pip
+          if [ -f automation/requirements.txt ]; then pip install -r automation/requirements.txt; fi
+
+      - name: Run daily SOC script
+        run: python automation/daily_soc_run.py
+
+      - name: Commit & push (only if changed)
+        run: |
+          git config user.name "Timothy Corrado"
+          git config user.email "timothycorrado@gmail.com"
+          git add automation/DAILY_LOG.md automation/runs/
+          git commit -m "chore: daily SOC run $(date -u +%F)" || exit 0
+          git push
