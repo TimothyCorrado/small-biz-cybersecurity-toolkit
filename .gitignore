@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+siem-labs/**/evidence/screenshots/
+siem-labs/**/evidence/**/*.png
+siem-labs/**/evidence/**/*.jpg
+siem-labs/**/evidence/**/*.jpeg

@@ -28,8 +28,8 @@ jobs:
 
       - name: Commit & push (only if changed)
         run: |
-          git config user.name "Timothy Corrado"
-          git config user.email "timothycorrado@gmail.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add automation/DAILY_LOG.md automation/runs/
-          git commit -m "chore: daily SOC run $(date -u +%F)" || exit 0
+          git commit -m "chore: daily SOC run $(date -u +%%F)" || exit 0
           git push
