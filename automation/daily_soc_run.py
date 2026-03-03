@@ -3,32 +3,32 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-<<<<<<< HEAD
+
 import hashlib
-=======
->>>>>>> 4c873aa (add daily SOC automation)
+
+
 import os
 import re
 import subprocess
 import sys
-<<<<<<< HEAD
-=======
+
+
 import hashlib
->>>>>>> 4c873aa (add daily SOC automation)
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 AUTOMATION_DIR = REPO_ROOT / "automation"
 RUNS_DIR = AUTOMATION_DIR / "runs"
 DAILY_LOG = AUTOMATION_DIR / "DAILY_LOG.md"
 
-<<<<<<< HEAD
+
 SUSPICIOUS_PATTERNS = [
     re.compile(r"AKIA[0-9A-Z]{16}"),
-=======
+
 # Simple “secret-ish” patterns (best-effort, not a full scanner)
 SUSPICIOUS_PATTERNS = [
     re.compile(r"AKIA[0-9A-Z]{16}"),                 # AWS Access Key ID-ish
->>>>>>> 4c873aa (add daily SOC automation)
+
     re.compile(r"(?i)aws_secret_access_key\s*="),
     re.compile(r"(?i)api[_-]?key\s*[:=]"),
     re.compile(r"(?i)secret\s*[:=]"),
@@ -58,15 +58,15 @@ def list_files() -> list[Path]:
         parts = set(p.parts)
         if any(d in parts for d in EXCLUDE_DIRS):
             continue
-<<<<<<< HEAD
+
         if p.suffix.lower() in {".png", ".jpg", ".jpeg", ".gif", ".webp", ".pdf", ".zip", ".7z", ".exe"}:
             continue
-=======
+
         # Skip huge binaries by extension (keep diff clean)
         if p.suffix.lower() in {".png", ".jpg", ".jpeg", ".gif", ".webp", ".pdf", ".zip", ".7z", ".exe"}:
             continue
         # Skip lockfiles that can be noisy if you don’t want them in reports
->>>>>>> 4c873aa (add daily SOC automation)
+
         files.append(p)
     return files
 
@@ -82,10 +82,10 @@ def suspicious_scan(files: list[Path], max_findings: int = 50) -> list[str]:
             continue
         for rx in SUSPICIOUS_PATTERNS:
             for m in rx.finditer(text):
-<<<<<<< HEAD
-=======
+
+
                 # Add small context: line number
->>>>>>> 4c873aa (add daily SOC automation)
+
                 line_no = text[: m.start()].count("\n") + 1
                 findings.append(f"- `{f.relative_to(REPO_ROOT)}` line {line_no}: matched `{rx.pattern}`")
                 if len(findings) >= max_findings:
@@ -99,7 +99,7 @@ def main() -> int:
     time_str = now.strftime("%H:%M:%S UTC")
 
     RUNS_DIR.mkdir(parents=True, exist_ok=True)
-<<<<<<< HEAD
+
 
     rc, sha = run_cmd(["git", "rev-parse", "--short", "HEAD"])
     sha = sha if rc == 0 else "unknown"
@@ -114,7 +114,7 @@ def main() -> int:
     rc, out = run_cmd([sys.executable, "-m", "pip", "check"])
     checks.append(CheckResult("pip check", rc == 0, out or "ok"))
 
-=======
+
     AUTOMATION_DIR.mkdir(parents=True, exist_ok=True)
 
     # Repo metadata
@@ -140,34 +140,34 @@ def main() -> int:
     checks.append(CheckResult("pip check", rc == 0, out or "ok"))
 
     # 3) “Suspicious string” scan
->>>>>>> 4c873aa (add daily SOC automation)
+
     files = list_files()
     findings = suspicious_scan(files)
     checks.append(CheckResult("lightweight secret-ish scan", len(findings) == 0, "no findings" if not findings else f"{len(findings)} finding(s)"))
 
-<<<<<<< HEAD
+
     py_files = [f for f in files if f.suffix == ".py"]
     md_files = [f for f in files if f.suffix == ".md"]
     stats_block = "\n".join([
         f"- Total text files scanned: **{len(files)}**",
-=======
+
     # 4) Simple repo stats
     py_files = [f for f in files if f.suffix == ".py"]
     md_files = [f for f in files if f.suffix == ".md"]
     stats_block = "\n".join([
         f"- Total tracked-ish text files scanned: **{len(files)}**",
->>>>>>> 4c873aa (add daily SOC automation)
+
         f"- Python files: **{len(py_files)}**",
         f"- Markdown files: **{len(md_files)}**",
         f"- Python version: `{sys.version.split()[0]}`",
     ])
 
-<<<<<<< HEAD
-=======
+
+
     # Create daily report
     report_path = RUNS_DIR / f"{date_str}.md"
 
->>>>>>> 4c873aa (add daily SOC automation)
+
     checks_md = []
     overall_ok = True
     for c in checks:
@@ -176,10 +176,10 @@ def main() -> int:
         details = c.details.replace("\n", "\n    ")
         checks_md.append(f"- **{c.name}**: {status}\n  - {details}")
 
-<<<<<<< HEAD
+
     report_path = RUNS_DIR / f"{date_str}.md"
-=======
->>>>>>> 4c873aa (add daily SOC automation)
+
+
     report = f"""# Daily SOC Run — {date_str}
 
 **Time:** {time_str}  
@@ -199,15 +199,15 @@ def main() -> int:
 ## Findings
 {"(none)" if not findings else os.linesep.join(findings)}
 """
-<<<<<<< HEAD
+
     report_path.write_text(report, encoding="utf-8")
 
-=======
+
 
     report_path.write_text(report, encoding="utf-8")
 
     # Append a one-liner to DAILY_LOG.md
->>>>>>> 4c873aa (add daily SOC automation)
+
     DAILY_LOG.touch(exist_ok=True)
     one_liner = f"- {date_str} {time_str} — Daily SOC run: {'PASS ✅' if overall_ok else 'ATTN ❌'} (branch {branch}, {sha})\n"
     with DAILY_LOG.open("a", encoding="utf-8") as f:
