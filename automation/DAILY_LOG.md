@@ -95,3 +95,4 @@
 - 2026-05-30 15:01:23 UTC — Daily SOC run: PASS ✅ (branch main, 8cc5236)
 - 2026-05-31 15:14:40 UTC — Daily SOC run: PASS ✅ (branch main, eb7d2d5)
 - 2026-06-01 19:17:03 UTC — Daily SOC run: PASS ✅ (branch main, ac4efac)
+- 2026-06-02 18:01:51 UTC — Daily SOC run: PASS ✅ (branch main, 31f59b7)
